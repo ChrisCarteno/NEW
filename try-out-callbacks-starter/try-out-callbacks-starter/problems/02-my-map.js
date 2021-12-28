@@ -17,6 +17,7 @@ console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 *******************************************************************************/
 
 let myMap = function() {
+//something something something
 
 };
 
