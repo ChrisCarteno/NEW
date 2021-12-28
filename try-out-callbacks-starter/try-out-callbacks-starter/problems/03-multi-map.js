@@ -4,6 +4,18 @@ The function should return the new value that results from running the original 
 through the callback n times.
 
 Examples:
+*******************************************************************************/
+
+
+
+let multiMap = function(value, n, cb) {
+  let num = value;
+  for(let i = 0; i < n; i++){
+    num = cb(num);
+  }
+
+  return num;
+};
 
 let result1 = multiMap(7, 2, function(n) {
   return n * 10;
@@ -19,13 +31,6 @@ let result3 = multiMap("hi", 5, function(s) {
   return s + "!";
 });
 console.log(result3); // hi!!!!!
-*******************************************************************************/
-
-let multiMap = function() {
-
-};
-
-
 
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
