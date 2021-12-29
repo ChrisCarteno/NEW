@@ -29,8 +29,7 @@ console.log(result2);   // false
 let result3 = mySome(['soup', 'noodles', 'bike', 'ship'], function(ele) {
     return ele.length === 4;
 });
-console.log(result3);   // true
-
+console.log(result3);
 
 
 
