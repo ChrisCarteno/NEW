@@ -1,7 +1,5 @@
 /*******************************************************************************
-Write a function `count` that accepts an array and a callback as arguments. The
-function should return the number of elements of the array that return true when
-passed to the callback.
+
 
 Examples:
 
@@ -24,16 +22,20 @@ let result4 = count(['follow', 'the', 'yellow', 'brick', 'road'], function (str)
     return str.includes('x');
 });
 console.log(result4); // 0
+Write a function `count` that accepts an array and a callback as arguments. The
+function should return the number of elements of the array that return true when
+passed to the callback.
 *******************************************************************************/
 
-let count = function() {
-
+let count = function (arr, cb) {
+  let counter = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (cb(arr[i])) {
+      counter++;
+    }
+  }
+  return counter;
 };
-
-
-
-
-
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 module.exports = count;
